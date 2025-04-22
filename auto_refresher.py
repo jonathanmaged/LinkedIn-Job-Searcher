@@ -39,9 +39,6 @@ def scheduled_task(driver):
         show_screen(driver)
     
     
-# keep_awake_thread = threading.Thread(target=prevent_sleep, daemon=True)
-# keep_awake_thread.start()
-    
 driver = initialize()
 # time.sleep(6)
 
@@ -56,27 +53,3 @@ while True:
    
 
 
-# loged code
-
-
-# # Bring the window to the front
-# for window in gw.getWindowsWithTitle('LinkedIn'):
-#     if window.isMinimized:
-#         window.restore()
-#     window.activate()
-#     window.maximize()
-
-# schedule.run_pending()
-
-# # Schedule the refresh every 10 seconds
-# schedule.every(10).minutes.do(scheduled_refresh(driver))
-
-# def scheduled_refresh():
-    # # Minimize and maximize the window
-    # print("🔽 Minimizing window...")
-    # driver.minimize_window()
-
-    # time.sleep(1)  # Short delay before maximizing again
-
-    # print("🔼 Maximizing window...")
-    # driver.maximize_window()
